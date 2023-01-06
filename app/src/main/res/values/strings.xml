@@ -95,8 +95,7 @@
     <string name="micError">Could not record audio</string>
     <string name="prepError">Could not prepare recorder:\n%1$s</string>
     <string name="noMic">Your device probably does not have microphone</string>
-    <string name="no16kHz">Sorry, your device does not support recording
-        with the required sample rate of 16kHz</string>
+    <string name="no16kHz">Sorry, your device does not support recording         with the required sample rate of 16kHz</string>
     <string name="notStarted">Could not start recorder</string>
 
     Mic is busy

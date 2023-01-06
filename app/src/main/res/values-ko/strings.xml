@@ -1,0 +1,206 @@
+<!DOCTYPE resources [   <!ENTITY exists      "목표 파일이 이미 존재합니다.">
+                        <!ENTITY tryAgain    ".\n위치를 선택하고 파일 이름을 입력하여, 다시 시도하세요.">
+                        <!ENTITY memory      "저장소 공간이 여유롭지 않습니다. SD카드 공간이 가득 찼습니다.\n">
+                        <!ENTITY permissions "다음 권한을 허용하세요. ">]>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="stop">멈춤</string>
+    <string name="error">오류</string>
+    <string name="loadSound">88개의 음표 사운드 샘플 중 %1$d 개를 로드했습니다.</string>
+
+    DIALOG ADD
+    <string name="mediaFile">오디오/비디오 입력</string>
+    <string name="midiFile">MIDI 입력</string>
+    <string name="recordAudio">오디오 녹음</string>
+
+    MENU
+    <string name="midiSettings">MIDI 재생 설정</string>
+    <string name="selectBelow">아래에서 트랙을 선택하세요</string>
+    <string name="selectAll">모두 선택</string>
+    <string name="midiSum">MIDI 정보</string>
+    <string name="userGuide">사용자 가이드</string>
+    <string name="review">평점과 리뷰</string>
+    <string name="justTracks">트랙</string>
+    <string name="justMidi">Midi</string>
+    <string name="justGuide">가이드</string>
+    <string name="justShare">공유</string>
+    <string name="justReview">리뷰</string>
+
+    RealTime
+    <string name="realTime">실시간</string>
+    <string name="recognizing">이제 실제 피아노로 연주해보세요.
+        \n노트들이 실시간으로 인식되고 표시될 것입니다.</string>
+
+    DRAWER
+    <string name="tracks">%1$d / %2$d</string>
+    <string name="tempo">BPM %1$d</string>
+    <string name="keyTemp">%1$s %2$d bpm</string>
+    <string name="noMidi">로드되지 않음</string>
+
+    MIDI
+    <string name="midiShare">텍스트로 MIDI 정보 공유하기</string>
+
+    ERROR
+    <string name="noFile">찾을 수 없는 파일</string>
+    <string name="securityFile">해당 파일을 열 수 없습니다.
+        \n다른 폴더나 SD카드로 파일을 복사하세요</string>
+    <string name="badFile">지원하지 않는 파일</string>
+    <string name="notMidi">MIDI 파일이 아닙니다</string>
+    <string name="emptyMidi">MIDI 없음</string>
+    <string name="noTracks">현재 파일은 연주할 수 있는 노트들을 가지고 있지 않습니다.
+        \n피아노로 연주할 수 없습니다</string>
+    <string name="zeroDur">현재 파일은 시간 데이터를 가지고 있지 않습니다.\n연주할 수 없습니다</string>
+    <string name="trackNotSel">선택된 트랙 없음</string>
+    <string name="trackNotSelPlaying">연주 중에는
+        최소 1개 이상의 트랙이 선택되어야합니다</string>
+
+    Summary
+    <string name="timeCur">시간 %1$02d:%2$02d</string>
+    <string name="timeOf"> / %1$02d:%2$02d</string>
+    <string name="copyright">저작권</string>
+    <string name="keys">Keys</string>
+    <string name="tempos">템포</string>
+    <string name="lyrics">가사</string>
+    <string name="marker">마커</string>
+    <string name="cue">큐 포인트</string>
+    <string name="otherText">다른 텍스트</string>
+    <string name="garbage">Garbage tracks</string>
+    <string name="harm">Harmonic tracks</string>
+    <string name="percuss">Percussion tracks</string>
+    <string name="untitled">Untitled</string>
+
+    MICROPHONE RECORDING
+
+    Permission
+    <string name="settings">설정</string>
+    <string name="grantRec">&permissions;마이크</string>
+    <string name="record">녹음</string>
+
+    File Errors
+    <string name="warning">주의</string>
+    <string name="notSaved">출력할 %1$s-file 이 지정되지 않았습니다.&tryAgain;</string>
+    <string name="existsTryAgain">&exists;\n%1$s&tryAgain;</string>
+    <string name="save">위치를 선택하고, %1$s-file 이름을 입력한 후 save 를 클릭하세요</string>
+
+    Other Errors
+    <string name="micError">오디오를 녹음할 수 없습니다</string>
+    <string name="prepError">Recoder 를 시작할 수 없습니다:\n%1$s</string>
+    <string name="noMic">현재 기기에서 마이크를 인식할 수 없습니다</string>
+    <string name="no16kHz">죄송합니다, 현재 기기는 필수 16kHz sample rate 로
+        녹음 기능을 지원하지 않습니다</string>
+    <string name="notStarted">Recoder 를 시작할 수 없습니다</string>
+
+    Mic is busy
+    <string name="micInUse">해당 마이크는 다른 앱이나 백그라운드 서비스에서 사용 중입니다:\n%1$s</string>
+    <string name="phoneRinging">전화벨이 울리고 있습니다.</string>
+    <string name="phoneCall">전화 통화가 설정되었습니다.</string>
+    <string name="voIpCall">오디오/비디오 채팅 또는 VoIP 통화가 설정되었습니다.</string>
+
+    Recording
+    <string name="recording">녹음중…</string>
+    <string name="tapStop">Tap stop when finished to save the record file.</string>
+    <string name="recFormat">%1$s kHz, %2$s, encoding “%3$s” into “AMR-NB”.</string>
+    <string name="mono">Mono</string>
+    <string name="stereo">Stereo</string>
+    <string name="invalidChannels">Invalid number of channels</string>
+    <string name="invalid">Invalid</string>
+
+    <string name="voiceRec">Noise suppression and echo cancellation are %1$s.</string>
+    <string name="applied">applied</string>
+    <string name="notSupported">not supported</string>
+
+    TRANSCRIPTION
+
+    <string name="transcription">Transcription</string>
+    <string name="transGuide">간단한 작업이 진행됩니다.\n
+        오디오/비디오 파일이 손상되지 않았다면, Decoding 과 Transcription 이 자동으로 시작됩니다.\n
+        변환 작업이 끝난 후에는, 작업을 마친 MIDI 파일이 저장될 것입니다.\n
+        그 후, 메인 화면으로 돌아가고 자동으로 연주될 것입니다.</string>
+
+    FFmpeg
+    <string name="probeFail">어떤 종류의 미디어 파일인지 인식할 수 없습니다.</string>
+    <string name="probeFmt" tools:ignore="PluralsCandidate">
+        지속시간 %1$d 분 : %2$d 초\n포맷 %3$s\n\n메타 데이터:\n%4$s\n\n스트림:\n%5$s</string>
+    <string name="cancel">취소</string>
+    <string name="cancelled">사용자에 의해 취소 되었습니다</string>
+    <string name="decodeSuccess">성공적으로 미디어 파일을 디코딩 했습니다</string>
+    <string name="decodeFail">해당 미디어 파일을 디코딩 할 수 없습니다,
+        해당 파일은 지원하지 않는 형식입니다.</string>
+    <string name="noAudioStream">오디오 스트림을 찾을 수 없습니다.</string>
+
+    <string name="ffmpegOut">FFmpeg 출력:</string>
+    <string name="fileInterrupt">파일 입출력 작업이 중단됨:\n\n%1$s</string>
+
+    <string name="memoryCopyFile">&memory;미디어 파일을 읽을 수 없음:\n\n%1$s</string>
+    <string name="memoryDecode">&memory;미디어 파일을 디코딩할 수 없음:\n\n%1$s</string>
+    <string name="memoryRawGraph">&memory;오디오 파형 그래프를 그릴 수 없음:\n\n%1$s</string>
+
+    <string name="memoryZeroPad">&memory;해당 오디오를 악보화 할 수 없음:\n\n%1$s</string>
+    <string name="memoryRollGraph">&memory;피아노 건반을 그릴 수 없음:\n\n%1$s</string>
+    <string name="waveTitle">첫 1초 동안의 오디오 파형</string>
+
+    TfLite
+    <string name="rollTitle">예상 가능 음표의 피아노 롤</string>
+    <string name="duration" tools:ignore="PluralsCandidate">%1$d 분 : %2$d 초</string>
+
+    <string name="compat">호환 가능</string>
+    <string name="inCompat">호환 불가능</string>
+    <string name="gpuCompat">현재 기기의 GPU %1$s</string>
+
+    <string name="transComplete">악보화 완료 :=)</string>
+    <string name="transInProgress">악보화가 진행 중입니다.
+        \n현재 작업을 취소 하시겠습니까?</string>
+    <string name="contTrans">악보화 진행 중</string>
+    <string name="saveMidi">MIDI 저장</string>
+
+    <string name="scale">스케일</string>
+    <string name="keySign">조표</string>
+    <string name="badScale">일치하는 스케일을 찾을 수 없습니다</string>
+
+
+    USER GUIDE
+
+    <string name="guideShare">구글 플레이 앱 링크를 다른 사람들과 공유하세요</string>
+    <string name="feedBack">Thank you for your feedback</string>
+    <string name="unknown">Unknown error</string>
+
+    <string name="userGuide1">MIDI, Karaoke 또는 다른 오디오/비디오 파일(ex. MP3, MP4, etc.)을 열거나
+        마이크를 통해 실제 피아노를 녹음하세요.</string>
+    <string name="userGuide2"><![CDATA[만약 필요한 파일을 찾을 수 없다면,
+        다른 폴더에 있을 수도 있습니다.
+        \n다른 폴더를 보려면, 탭 메뉴 —> “SD card 보기” 또는 “내부 저장소 보기” 를 선택하세요.]]></string>
+
+    <string name="userGuide3">본 프로그램은 자동으로 오디오를 악보화 하고 MIDI 파일로 저장합니다</string>
+    <string name="userGuide4">하지만, 추출된 악기 정보가 없다면,
+        악보화 된 음표들은 모두 하나의 파트로 합쳐질 것입니다.
+        정확도는 노래의 복잡성에 따라 달라지며, 솔로 피아노 곡에서 정확도가 확실히 더 높습니다.
+        피아노곡에 대한 정확도는 대략 75% 입니다.</string>
+
+    <string name="userGuide5">현재 존재하는 MIDI 파일을 열었다면, 트랙을 선택하세요.
+        타악기(퍼커션) 트랙은 (“Drums”, “Rhythms”, “Hit”, “Blow”, “Strike”, “Clash” 등등…)
+        사용할 수 없을 것입니다.</string>
+    <string name="userGuide6">인터넷에서 다운 받은 일부 MIDI 파일들은,
+        수십 개의 트랙을 가지고 있을 수도 있습니다</string>
+
+    <string name="userGuide7">실시간으로 음악을 연주하고 싶다면,
+        화면의 상단 중앙 부분을 탭 하세요.
+        또는 코드에서 코드로 앞이나 뒤로 가고 싶다면,
+        음악을 멈추고 화면의 상단 좌측과 상단 우측을 탭하세요.</string>
+
+    <string name="userGuide8">당신의 실제 피아노에서 MIDI 코드를 배우고 싶다면,
+        실시간 악보화 기능을 사용하세요</string>
+    <string name="userGuide9">올바르게 연주된 노트들은 초록색, 그렇지 않은 부분은 빨간색으로 표시됩니다.</string>
+
+    <string name="userGuide10_1">주위에서 대화 소리가 들리거나,
+        시끄러운 환경에서 앉아 있다면, 실제로 연주하지 않았지만,
+        부정확하게 인식되는 노트들이 있을 수 있습니다.
+        그런 경우에는 빨간색 표시가 많이 날 것이고, 불쾌할 것입니다.
+        \n따라서, 더 정확한 인식 정확도를 원한다면,피아노 외에 다른 소리가 안나는 곳에 있어주세요.</string>
+    <string name="userGuide10_2">전자 피아노에 연결 할 수 있는 편한 헤드폰을 가지고 있다면, 그와 관련된 유용한 팁이 있습니다.
+        다음 사진과 같이 "모바일 장치에 헤드폰을 착용하십시오":</string>
+    <string name="userGuide11">볼륨을 더 키우세요</string>
+
+    <string name="userGuide12">코드의 모든 음을 동시에 올바르게 연주하면(눌렀던 모든 키가 초록색), 자동으로 다음 MIDI 코드로 진행합니다.</string>
+    <string name="userGuide13">Enjoy!</string>
+
+</resources>
