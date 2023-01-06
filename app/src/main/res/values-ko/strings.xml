@@ -98,20 +98,20 @@
 
     Recording
     <string name="recording">녹음중…</string>
-    <string name="tapStop">Tap stop when finished to save the record file.</string>
-    <string name="recFormat">%1$s kHz, %2$s, encoding “%3$s” into “AMR-NB”.</string>
-    <string name="mono">Mono</string>
-    <string name="stereo">Stereo</string>
-    <string name="invalidChannels">Invalid number of channels</string>
+    <string name="tapStop">녹음 파일 저장을 끝내려면 멈춤을 클릭하세요.</string>
+    <string name="recFormat">%1$s kHz, %2$s, “%3$s” 에서 “AMR-NB” 로 인코딩.</string>
+    <string name="mono">모노</string>
+    <string name="stereo">스테레오</string>
+    <string name="invalidChannels">잘못된 채널 수</string>
     <string name="invalid">Invalid</string>
 
-    <string name="voiceRec">Noise suppression and echo cancellation are %1$s.</string>
-    <string name="applied">applied</string>
-    <string name="notSupported">not supported</string>
+    <string name="voiceRec">노이즈 억제 및 반향 제거는 %1$s 입니다.</string>
+    <string name="applied">적용됨</string>
+    <string name="notSupported">지원하지 않음</string>
 
     TRANSCRIPTION
 
-    <string name="transcription">Transcription</string>
+    <string name="transcription">악보화(Transcription)</string>
     <string name="transGuide">간단한 작업이 진행됩니다.\n
         오디오/비디오 파일이 손상되지 않았다면, Decoding 과 Transcription 이 자동으로 시작됩니다.\n
         변환 작업이 끝난 후에는, 작업을 마친 MIDI 파일이 저장될 것입니다.\n
