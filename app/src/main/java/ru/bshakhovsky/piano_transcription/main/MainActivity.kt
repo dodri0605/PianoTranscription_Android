@@ -21,10 +21,6 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment.InstantiationException
 import androidx.lifecycle.ViewModelProvider
 
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.MobileAds
-import com.google.android.gms.ads.RequestConfiguration
-
 import ru.bshakhovsky.piano_transcription.R.dimen
 import ru.bshakhovsky.piano_transcription.R.drawable
 import ru.bshakhovsky.piano_transcription.R.id
@@ -33,8 +29,6 @@ import ru.bshakhovsky.piano_transcription.R.menu.menu_main
 import ru.bshakhovsky.piano_transcription.R.string
 import ru.bshakhovsky.piano_transcription.databinding.ActivityMainBinding
 
-import ru.bshakhovsky.piano_transcription.ad.AdBanner
-import ru.bshakhovsky.piano_transcription.ad.AdInterstitial
 import ru.bshakhovsky.piano_transcription.main.mainUI.DrawerMenu
 import ru.bshakhovsky.piano_transcription.main.mainUI.PlaySeekBar
 import ru.bshakhovsky.piano_transcription.main.openGL.Render
@@ -69,8 +63,6 @@ class MainActivity : AppCompatActivity() {
     private var micClickTime = SystemClock.uptimeMillis()
     private var mainMenu: Menu? = null
     private lateinit var drawerListener: DrawerMenu
-
-    private lateinit var interstitial: AdInterstitial
 
     @SuppressLint("CheckResult")
     private val getMidi =
@@ -166,22 +158,6 @@ class MainActivity : AppCompatActivity() {
             ).apply { syncState() }
             drawerMenu.setNavigationItemSelectedListener(drawerListener)
             seek.setOnSeekBarChangeListener(PlaySeekBar(play))
-
-            MobileAds.initialize(applicationContext)
-            if (DebugMode.debug) MobileAds.setRequestConfiguration(
-                RequestConfiguration.Builder().setTestDeviceIds(
-                    listOf(
-                        AdRequest.DEVICE_ID_EMULATOR,
-                        "87FD000F52337DF09DBB9E6684B0B878", // Samsung Galaxy S9+, Android 10
-                        "9AA370206113A6039BC7B5BB02F0F7E8", // Samsung Galaxy A7, Android 6
-                        @Suppress("SpellCheckingInspection")
-                        "921547C5AAEF85EB72E17DFAE23DD8BA", // Huawei MediaPad X2, Android 5
-                        "CA07E6A50A0CCC9296341E801663E998" // HTC Desire 610, Android 4.4
-                    )
-                ).build()
-            )
-            AdBanner(lifecycle, applicationContext, adMain, string.bannerMain)
-            interstitial = AdInterstitial(lifecycle, this@MainActivity)
         }
 
         with(realTime) {
@@ -272,7 +248,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onConfigurationChanged(newConfig: Configuration): Unit =
         super.onConfigurationChanged(newConfig).also {
-            interstitial = AdInterstitial(lifecycle, this)
             with(binding.fabMain.layoutParams as ViewGroup.MarginLayoutParams) {
                 with(resources) {
                     when (newConfig.orientation) {
@@ -345,10 +320,6 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
                 }
-                /* Show ad only after inputStream?.use closed.
-                Otherwise, if user quickly clicks on ad, then after returning
-                java.lang.SecurityException readExceptionWithFileNotFoundExceptionFromParcel */
-                interstitial.show()
             }
         } catch (e: FileNotFoundException) {
             InfoMessage.dialog(this, string.noFile, "${e.localizedMessage ?: e}\n\n$uri")

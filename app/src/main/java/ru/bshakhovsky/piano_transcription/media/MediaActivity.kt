@@ -24,7 +24,6 @@ import ru.bshakhovsky.piano_transcription.R.menu.menu_main
 import ru.bshakhovsky.piano_transcription.R.string
 import ru.bshakhovsky.piano_transcription.databinding.ActivityMediaBinding
 
-import ru.bshakhovsky.piano_transcription.ad.AdBanner
 import ru.bshakhovsky.piano_transcription.media.background.BothRoutines
 import ru.bshakhovsky.piano_transcription.media.background.DecodeRoutine
 import ru.bshakhovsky.piano_transcription.media.background.TranscribeRoutine
@@ -88,7 +87,6 @@ class MediaActivity : AppCompatActivity(), View.OnClickListener {
                     supportActionBar?.setDisplayHomeAsUpEnabled(true)
                     setNavigationOnClickListener(this@MediaActivity)
                 }
-                AdBanner(lifecycle, applicationContext, adTrans, string.bannerTrans)
             }
         }
 

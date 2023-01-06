@@ -9,7 +9,7 @@ android {
     defaultConfig {
         applicationId 'ru.BShakhovsky.Piano_Transcription'
         minSdk 19 // TensorFlow Lite
-        targetSdk 30
+        targetSdk 32
         versionCode 11
         versionName '2.4'
         multiDexEnabled true
@@ -30,7 +30,6 @@ dependencies {
     api 'androidx.fragment:fragment-ktx:1.4.0'
 
     api 'com.google.android.material:material:1.4.0'
-    api 'com.google.android.gms:play-services-ads:20.5.0'
     api 'com.google.android.play:core:1.10.2'
 
     api 'org.tensorflow:tensorflow-lite-gpu:2.7.0'

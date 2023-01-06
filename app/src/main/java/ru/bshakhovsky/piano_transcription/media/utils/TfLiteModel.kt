@@ -23,7 +23,6 @@ import ru.bshakhovsky.piano_transcription.utils.DebugMode
 import java.io.Closeable
 
 class TfLiteModel : Closeable {
-
     companion object {
         const val inNumSamples: Int = 17_920
         const val outStepNotes: Int = 32

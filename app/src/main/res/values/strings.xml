@@ -7,10 +7,6 @@
 
     <string name="app_name" translatable="false">Piano Transcription</string>
 
-    <string name="adMobDebug"  translatable="false">ca-app-pub-3940256099942544~3347511713</string>
-    <string name="bannerDebug" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="interDebug"  translatable="false">ca-app-pub-3940256099942544/1033173712</string>
-
     <string name="ok" translatable="false">OK</string>
     <string name="stop">Stop</string>
     <string name="error" tools:ignore="DuplicateStrings">Error</string>
