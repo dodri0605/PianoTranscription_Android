@@ -36,7 +36,7 @@ dependencies {
     api 'org.tensorflow:tensorflow-lite-metadata:0.3.1'
     api 'org.tensorflow:tensorflow-lite-support:0.3.1'
 
-    api 'com.github.pdrogfer:MidiDroid:v1.1'
+    api 'com.github.pdrogfer:MidiDroid:1.1'
     api 'com.arthenica:mobile-ffmpeg-min:4.4.LTS'
 
     debugApi 'com.squareup.leakcanary:leakcanary-android:2.7'
